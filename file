@@ -1,0 +1,5 @@
+#!/bin/bash
+yum install httpd -y
+echo "<h1> Hai i am WEB-SERVER Running in AWS. This is Modified Version From the GITHUB VCS </h1>" > /var/www/html/index.html
+service httpd start
+chkconfig httpd on
